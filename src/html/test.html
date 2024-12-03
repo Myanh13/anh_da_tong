@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Room Status Tag</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    /* Gift Tag */
+    .gift-tag {
+      position: relative;
+      width: 93px; /* Chiều rộng nhỏ hơn */
+      height: 25px; /* Chiều cao nhỏ hơn */
+      background: #d2a679; /* Màu kraft paper */
+      border-radius: 5px;
+      clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+      display: flex;
+      align-items: center;
+      padding: 5px; /* Giảm padding để giữ kích thước nhỏ */
+    }
+
+    /* Lỗ tròn */
+    .gift-tag::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 10px; /* Điều chỉnh lỗ tròn về vị trí thích hợp */
+      transform: translateY(-50%);
+      width: 10px; /* Lỗ tròn nhỏ hơn */
+      height: 10px; /* Lỗ tròn nhỏ hơn */
+      background: white;
+      border-radius: 50%;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Thông báo trên tag */
+    .thongbao {
+      font-size: 10px; /* Giảm kích thước font */
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+      background: #f44336; /* Màu đỏ cho "Hết phòng" */
+      padding: 3px 6px; /* Giảm padding để giữ kích thước nhỏ */
+      border-radius: 3px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="gift-tag">
+    <div class="thongbao">Hết phòng</div>
+  </div>
+</body>
+</html>

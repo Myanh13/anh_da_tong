@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa & Massage</title>
+      <!-- font awsome 6 -->
+      <link rel="stylesheet" href="../css/font-awesome-pro/css/all.css">
+      <link rel="stylesheet" href="../css/font-awesome-pro/css/all.min.css">
+      <link rel="stylesheet" href="../css/font-awesome-pro/css/fontawesome.css">
+      <link rel="stylesheet" href="../css/font-awesome-pro/css/fontawesome.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+      <!-- font awsome 6 -->
+       <!-- dta aos -->
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- dta aos -->
+       <!-- font chữ -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <!-- font chữ -->
+         <!-- swiper -->
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <!-- swiper -->
+       <link rel="stylesheet" href="/src/css/Dich_Vu.css">
+</head>
+<body>
+    <div class="container">
+       <!-- header -->
+        <header>
+         <div class="bg_menu" data-aos="fade" data-aos-easing="linear" data-aos-duration="700">
+            <div class="min_warp">
+                <div class="wap_menu">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="../../public/image/Logo.png" alt="Logo PARADICO">
+                        </a>
+                    </div>
+                    <!-- logo -->
+                    <nav class="navbar">
+                        <ul class="list_menu">
+                            <li class="">
+                                <a href="index.html" title="Trang chủ"> 
+                                    Trang chủ
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/" title="Trang chủ"> 
+                                Về Maple Inn
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/" title="Trang chủ"> 
+                                    Phòng
+                                </a>
+                            </li>
+                            <li class="has-submenu active ">
+                                <a href="" title="Dịch vụ tại Maple Inn">
+                                    Dịch vụ tại Maple Inn
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" x="0" y="0" viewBox="0 0 128 128"><g><path d="m64 88c-1.023 0-2.047-.391-2.828-1.172l-40-40c-1.563-1.563-1.563-4.094 0-5.656s4.094-1.563 5.656 0l37.172 37.172 37.172-37.172c1.563-1.563 4.094-1.563 5.656 0s1.563 4.094 0 5.656l-40 40c-.781.781-1.805 1.172-2.828 1.172z"></path></g></svg>
+                                </a>
+                                <ul class="menuList-submain">
+                                    <li class="active">
+                                        <a href="./Dich_Vu.html" title="Nhà hàng"> 
+                                            Nhà hàng
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="./Tiec_sk.html" title="Tiệc &amp; Sự kiện"> 
+                                            Tiệc &amp; Sự kiện
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="./Spa_ms.html" title="Spa &amp; Massage"> 
+                                            Spa &amp; Massage
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a href="/" title="Trang chủ"> 
+                                Cẩm nang du lịch
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/" title="Trang chủ"> 
+                                Giới thiệu
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="./Lien_he.html" title="Trang chủ"> 
+                                Liên hệ
+                                </a>
+                            </li>
+                        </ul>  
+                        <div class="header_hotline">
+                            <a href="">
+                                <span>
+                                Tel: 09743231234
+                                </span>
+                            </a>
+                        </div>
+                        <div class="contact_menu">
+                            <a href="#"><button class="ocean-button" id="oceanButton">Liên hệ ngay</button></a>
+                        </div>
+                    </nav>
+                    <!-- nav -->
+                    <!-- navmobile -->
+                    <!-- hiển thị thanh slidebar mobile bằng input checked -->
+                    <label  for="click_open_close" class="menu_icon" id="menu-icon"><i class="fa-light fa-bars"></i></label>
+                    <input hidden type="checkbox" name="" class="nav_input" id="click_open_close">
+                    <label  for="click_open_close" class="box_overlay"></label>
+                        <!-- slidebar mobile -->
+                        <div class="sidebar_mobile">
+                            <label  for="click_open_close" class="x_sdide_bar"><i class="fa-sharp fa-regular fa-x"></i></label>
+                            <div class="logo_mb">
+                                <a href="#">
+                                    <img src="../../public/image/Logo.png" alt="Logo PARADICO">
+                                </a>
+                            </div>
+                            <div class="dkdn_mb">
+                                <p class="t_dkdn_mb">Đăng nhập để hưởng những đặc quyền dành riêng cho thành viên.</p>
+                                <a href="#">Đăng nhập &amp; Đăng ký</a>
+                            </div>
+                            <div class="wap_menu_mobile"> 
+                                <ul class="menu_mobile">
+                                    <li><a href="./index.html" class="active" >Trang chủ</a></li>
+                                    <li class="has-submenu">
+                                        <a href="#" class="submenu-toggle" >Về Paradico <span><i class="fa-light fa-chevron-down"></i></span></a>
+                                        <ul class="submenu_mobile">
+                                            <li><a href="XXXX">blabla</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="XXXX">Phòng</a></li>
+                                    <li class="has-submenu">
+                                        <a href="./Dich_Vu.html" class="submenu-toggle" >Dịch vụ tại Paradico <span><i class="fa-light fa-chevron-down"></i></span></a>
+                                        <ul class="submenu_mobile">
+                                            <li><a href="./dvkd_map.html">Đơn vị kinh doanh Map</a></li>
+                                            <li><a href="./dvkd_navi.html">Đơn vị kinh doanh Navigation</a></li>
+                                            <li><a href="./dvkd_tracking.html">Đơn vị kinh doanh Tracking</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <a href="XXXX" class="submenu-toggle" >Cẩm nang du lịch <span><i class="fa-light fa-chevron-down"></i></span></a>
+                                        <ul class="submenu_mobile">
+                                            <li><a href="XXXX">Kiểm tra bảo hành</a></li>
+                                            <li><a href="XXXX">Kích hoạt bảo hành </a></li>
+                                            <li><a href="XXXX">Câu hỏi thường gặp </a></li>
+                                            <li><a href="XXXX">Map API </a></li>   
+                                        </ul>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <a href="XXXX" class="submenu-toggle" >Giới thiệu<span><i class="fa-light fa-chevron-down"></i></span></a>
+                                        <ul class="submenu_mobile">
+                                            <li><a href="#">Chính sách bảo mật</a></li>
+                                            <li><a href="#">Chính sách đổi trả</a></li>
+                                            <li><a href="#">Chính sách bảo hành</a></li>
+                                            <li><a href="#">Chính sách giao nhận</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="./Lien_he.html">Liên hệ</a></li>
+                                </ul>
+                                <ul class="list_social_rwd">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-brands fa-x-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-brands fa-square-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- slidebar mobile -->
+                    <!-- navmobile -->
+                </div>
+              </div>
+         </div>
+        </header>
+        <!-- header -->
+        <main>
+            <div class="banner">
+                <div class="wap_name_dt_rr">
+                     <div class="min_warp2">
+                        <div class="name_menu_date_restaurant"  data-aos="fade-up" data-aos-duration="2700">
+                            <p class="name_menu">Làm dịu tâm hồn bạn tại Trung tâm chăm sóc sức khỏe Maple Inn</p>
+                            <h1 class="restaurant">Spa & Massage</h1>
+                            <p class="date">Tận hưởng dịch vụ mát-xa chuyên nghiệp chất lượng cao tại trung tâm chăm sóc sức khỏe của chúng tôi,
+                                có được liệu trình kéo giãn toàn diện về thể chất và tinh thần.</p>
+                        </div>
+                   </div>
+               </div>
+            </div>
+            <div class="section_menu">
+ <!--water menu  -->
+                <div class="water_menu">
+                    <div class="min_warp2">
+                      <div class="row1">
+                        <div class="about_tittle">
+                                <div class="heading_about_title" data-aos="fade-up" data-aos-duration="1500">
+                                    <p class="title1">Khu nghỉ dưỡng 3.000 mét vuông cho sức khỏe và thể hình</p>
+                                    <h2 class="title2">Wellness & Fitness Tại Maple Inn</h2>
+                                </div>
+                            <div class="pd_15">
+                                <div class="btn_ev" data-aos="fade-up" data-aos-duration="1000">
+                                    <a href="#"><span>Liên hệ</span></a>
+                                </div>           
+                            </div>                  
+                        </div>
+                        <div class="row2" data-aos="fade-up" data-aos-duration="3000">
+                            <div class="col50 pd_R30">
+                                <p class="heading_desc">ãy tránh xa sự hối hả và nhộn nhịp của cuộc sống hàng ngày và tìm thấy sự thư giãn hoàn toàn tại khu nghỉ dưỡng của chúng tôi. Tiếp cận trung tâm chăm sóc sức khỏe rộng hơn 3.000 mét vuông bao gồm spa, phòng xông hơi khô, hồ bơi, phòng tập thể dục, lớp học yoga và pilates cùng nhiều dịch vụ khác. Bạn sẽ tìm thấy mọi thứ mình cần, từ phòng tập thể dục chuyên dụng đến nhiều thiết bị tập thể dục. Tất cả đều được lên kế hoạch cẩn thận để giúp bạn đạt được sự cân bằng giữa năng lượng, cơ thể và tâm trí.</p>
+                            </div>
+                            <div class="col50 pd_L30">
+                                <p class="heading_desc">Để đặt chỗ hoặc đặt lịch hẹn, vui lòng gọi đến Trung tâm chăm sóc sức khỏe của khách sạn theo số +84 0988001001 hoặc gửi email đến spa@maple-inn.abc . Các cuộc hẹn ngoài giờ phải được đặt trước ít nhất 24 giờ. Sẽ áp dụng phụ phí. Xin lưu ý rằng các liệu pháp phải bắt đầu chậm nhất là 8 giờ tối.</p>
+                            </div>
+                         </div>
+                      </div>
+                    </div>
+                </div>
+ <!--water menu  -->
+<!-- img_spa_massage -->
+                <div class="min_warp2">
+                   <div class="row_1">
+                    <div class="row5">
+                        <div class="col-lg-12 col-12 item-service1" data-aos="fade-up" data-aos-duration="3000">
+                            <div class="item-service" style="--bg-img: url(//theme.hstatic.net/200000909393/1001269498/14/spa_service_1_img_grande.jpg?v=2537);">
+                                <div class="item-img">
+                                    <div class="lazy-img">
+                                        <picture>
+                                            <source media="(max-width: 480px)" srcset="//theme.hstatic.net/200000909393/1001269498/14/spa_service_1_img_grande.jpg?v=2537">
+                                            <source media="(min-width: 481px)" srcset="//theme.hstatic.net/200000909393/1001269498/14/spa_service_1_img.jpg?v=2537">
+                                            <img class="img-loop " src="//theme.hstatic.net/200000909393/1001269498/14/spa_service_1_img.jpg?v=2537" alt="Trị liệu spa">
+                                        </picture>		
+                                    </div>
+                                </div>
+                                <div class="item-content">
+                                    <div class="heading-title">
+                                        <p class="title1">Spa &amp; Wellness</p>
+                                        <p class="title2">Trị liệu spa</p>
+                                        <p class="heading-desc">Chăm sóc cơ thể, Chăm sóc da mặt, Chăm sóc tay &amp; chân.<br>
+                                        50 phút | 1,800,000 VNĐ<br>
+                                        1 giờ 20 phút | 3,000,000 VNĐ</p>
+                                    </div>
+                                    
+                                    <div class="btn_map">
+                                        <a href="#"><span>Liên hệ</span></a>
+                                    </div>    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 col-12 item-service2" >
+                            <div data-aos="fade-up-right"  data-aos-duration="1000" class="item-service" style="--bg-img: url(//theme.hstatic.net/200000909393/1001269498/14/spa_service_2_img_grande.jpg?v=2537)">
+                                <div class="item-img">
+                                    <div class="lazy-img">
+                                        <picture>
+                                            <source media="(max-width: 480px)" srcset="//theme.hstatic.net/200000909393/1001269498/14/spa_service_2_img_grande.jpg?v=2537">
+                                            <source media="(min-width: 481px)" srcset="//theme.hstatic.net/200000909393/1001269498/14/spa_service_2_img.jpg?v=2537">
+                                            <img  class="img-loop " src="//theme.hstatic.net/200000909393/1001269498/14/spa_service_2_img.jpg?v=2537" alt="Hồ bơi vô cực">
+                                        </picture>		
+                                    </div>
+                                </div>
+                                <div class="item-content">
+                                    <div class="heading-title">
+                                        <p class="title1">Sức khoẻ</p>
+                                        <p class="title2">Hồ bơi vô cực</p>
+                                        <p class="heading-desc">Curabitur ullamcorper ultricies nisi. Nam eget dui.<br>
+                                             Giờ mở cửa: 10:00 tới 22:00</p>
+                                    </div>
+                                    
+                                    <div class="btn_map">
+                                        <a href="#"><span>Liên hệ</span></a>
+                                    </div>    
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12 item-service3">
+                            <div data-aos="fade-up-left"  data-aos-duration="3000" class="item-service" style="--bg-img: url(//theme.hstatic.net/200000909393/1001269498/14/spa_service_3_img_grande.jpg?v=2537)">
+                                <div class="item-img">
+                                    <div class="lazy-img">
+                                        <picture>
+                                            <source media="(max-width: 480px)" srcset="//theme.hstatic.net/200000909393/1001269498/14/spa_service_3_img_grande.jpg?v=2537">
+                                            <source media="(min-width: 481px)" srcset="//theme.hstatic.net/200000909393/1001269498/14/spa_service_3_img.jpg?v=2537">
+                                            <img class="img-loop " src="//theme.hstatic.net/200000909393/1001269498/14/spa_service_3_img.jpg?v=2537" alt="Yoga &amp; Thiền">
+                                        </picture>		
+                                    </div>
+                                </div>
+                                <div class="item-content">
+                                    <div class="heading-title">
+                                        <p class="title1">Spa &amp; Wellness</p>
+                                        <p class="title2">Yoga &amp; Thiền</p>
+                                        <p class="heading-desc">Yoga, thiền và chăm sóc tinh thần<br>
+                                        <br>
+                                        Thứ Hai đến Thứ Năm: 10:00 – 21:00<br>
+                                        Thứ Sáu đến Chủ Nhật: 09:00 – 21:00</p>
+                                    </div>
+                                    
+                                    <div class="btn_map">
+                                        <a href="#"><span>Liên hệ</span></a>
+                                    </div>    
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12 item-service4">
+                            <div data-aos="fade-up-right"  data-aos-duration="1000" class="item-service" style="--bg-img: url(//theme.hstatic.net/200000909393/1001269498/14/spa_service_4_img_grande.jpg?v=2537)">
+                                <div class="item-img">
+                                    <div class="lazy-img">
+                                        <picture>
+                                            <source media="(max-width: 480px)" srcset="//theme.hstatic.net/200000909393/1001269498/14/spa_service_4_img_grande.jpg?v=2537">
+                                            <source media="(min-width: 481px)" srcset="//theme.hstatic.net/200000909393/1001269498/14/spa_service_4_img.jpg?v=2537">
+                                            <img class="img-loop " src="//theme.hstatic.net/200000909393/1001269498/14/spa_service_4_img.jpg?v=2537" alt="Khu vực xông hơi">
+                                        </picture>		
+                                    </div>
+                                </div>
+                                <div class="item-content">
+                                    <div class="heading-title">
+                                        <p class="title1">Spa &amp; Wellness</p>
+                                        <p class="title2">Khu vực xông hơi</p>
+                                        <p class="heading-desc">Giờ mở cửa: 10:00 tới 19:00</p>
+                                    </div>
+                                    
+                                    <div class="btn_map">
+                                        <a href="#"><span>Liên hệ</span></a>
+                                    </div>    
+                                    
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-lg-6 col-12 item-service5">
+                            <div data-aos="fade-up-left"  data-aos-duration="2500" class="item-service" style="--bg-img: url(//theme.hstatic.net/200000909393/1001269498/14/spa_service_5_img_grande.jpg?v=2537)">
+                                <div class="item-img">
+                                    <div class="lazy-img">
+                                        <picture>
+                                            <source media="(max-width: 480px)" srcset="//theme.hstatic.net/200000909393/1001269498/14/spa_service_5_img_grande.jpg?v=2537">
+                                            <source media="(min-width: 481px)" srcset="//theme.hstatic.net/200000909393/1001269498/14/spa_service_5_img.jpg?v=2537">
+                                            <img class="img-loop " src="//theme.hstatic.net/200000909393/1001269498/14/spa_service_5_img.jpg?v=2537" alt="Trung tâm thể dục">
+                                        </picture>		
+                                    </div>
+                                </div>
+                                <div class="item-content">
+                                    <div class="heading-title">
+                                        <p class="title1">Sức khoẻ</p>
+                                        <p class="title2">Trung tâm thể dục</p>
+                                        <p class="heading-desc">Phòng tập thể dục 24 giờ với thiết bị tim mạch và tạ tự do. Giờ mở cửa: 7:00 đến 20:00</p>
+                                    </div>
+                                    
+                                    <div class="btn_map">
+                                        <a href="#"><span>Liên hệ</span></a>
+                                    </div>           
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+<!-- img_spa_massage -->
+
+ <!-- form email -->
+                <div class="email_newletter" data-aos="fade-up" data-aos-duration="1900">
+                    <div class="min_warp2">
+                        <div class="row_email">
+                            <div class="col-lg-6 col-12">
+                                <div class="newsletter_title">
+                                    <div class="heading-title">
+                                        <p class="title3">Hãy kết nối cùng Maple Inn</p>
+                                        <h3 class="title4">Đăng ký nhận bản tin của chúng tôi để nhận tin tức, ưu đãi và khuyến mãi.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <form accept-charset="UTF-8" action="#" class="contact_form" method="post">
+                                    <input name="form_type" type="hidden" value="customer">
+                                    <input name="utf8" type="hidden" value="✓">
+                                    <div class="form-group input-group">
+                                        <input type="hidden" id="new_tags" name="#" value="Đăng kí nhận tin">     
+                                        <input required="" type="email" name="#" class="form-control newsletter-input" id="newsletter-email" pattern="^(.)+@[A-Za-z0-9]([A-Za-z0-9.\-]*[A-Za-z0-9])?\.[A-Za-z]{1,13}$" placeholder="Nhập email của bạn" aria-label="Email Address">
+                                        <div class="input_btn">
+                                            <button type="submit" class="cta-submitform newsletter-btn">Đăng ký 
+                                                <span class="icon-btn"><i class="fa fa-send-o"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="check-form">
+                                        <input type="checkbox" id="new_check" required="">
+                                        <span>Đã đọc &amp; Đồng ý <a href="#">Chính sách bảo mật</a></span>
+                                    </div>
+                                    <input id="eb66e25e0d524d97a7478759b2b7d91e" name="g-recaptcha-response" type="hidden"><noscript data-src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></noscript><noscript>grecaptcha.ready(function() {grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', {action: 'submit'}).then(function(token) {document.getElementById('eb66e25e0d524d97a7478759b2b7d91e').value = token;});});</noscript>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ <!-- form email -->
+  <!-- footer-intagram -->
+                <div class="footer-instagram" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-out"
+                data-aos-delay="400"
+                data-aos-offset="0">
+                    <div class="min_warp2">
+                        <div class="row_col">
+                            <div class="box_intagram">
+                                <img src="//theme.hstatic.net/200000909393/1001269498/14/home_instagram_img_1.jpg?v=2537" alt="Instgram 1">
+                            </div>   
+                            <div class="box_intagram">
+                                <img src="//theme.hstatic.net/200000909393/1001269498/14/home_instagram_img_2.jpg?v=2537" alt="Instgram 2">
+                            </div>            
+                            <div class="box_intagram">
+                                <img src="//theme.hstatic.net/200000909393/1001269498/14/home_instagram_img_3.jpg?v=2537" alt="Instgram 3">
+                            </div>           
+                            <div class="box_intagram">
+                                <img src="//theme.hstatic.net/200000909393/1001269498/14/home_instagram_img_4.jpg?v=2537" alt="Instgram 4">
+                            </div>           
+                        </div>
+                        <div class="btn-more text-center">
+                            <a href="" class="button2"><span>Follow Us on Instagram</span></a>
+                        </div>
+                    </div>
+                </div>
+   <!-- footer-intagram -->
+            </div>
+        </main>
+        <footer>
+            <div class="footer_container">
+                <div class="bg_footer">
+                    <div class="min_warp2">
+                        <div class="row" data-aos="fade-up"
+                        data-aos-duration="3000">
+                            <div class="col1_ft">
+                                <h2><a href="">Maple Inn</a></h2>
+                                <p>Được thành lập vào năm 1998, Maple Inn tọa lạc trên những ngọn đồi của Lâm Đồng, đưa bạn đắm chìm vào sự kỳ diệu của dãy núi Langbiang của Đà Lạt trên nền trời trong xanh. Chào mừng đến với Maple Inn</p>
+                                <ul class="footer_icon">
+                                    <li class="item_ft"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>		
+                                    <li class="item_ft"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>											
+                                    <li class="item_ft"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>											
+                                    <li class="item_ft"><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>											
+                                    <li class="item_ft"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>											
+                                </ul>
+                            </div>
+                            <div class="col2_ft">
+                                <h4 class="tittle_ft">Về Maple Inn</h4>
+                                <ul class="nav_link">
+                                    <li class="item_ft"><a class="a_nav_link" href="">Tìm kiếm</a></li>
+                                    <li class="item_ft"><a href="#">Giới thiệu</a></li>	
+                                    <li class="item_ft"><a href="#">Chính sách đổi trả</a></li>	
+                                    <li class="item_ft"><a href="#">Chính sách bảo mật</a></li>		
+                                    <li class="item_ft"><a href="#">Điều khoản dịch vụ</a></li>		
+                                    <li class="item_ft"><a href="#">Liên hệ</a></li>											
+                                </ul>
+                            </div>
+                            <div class="col2_ft">
+                                <h4 class="tittle_ft">Liên kết</h4>
+                                <ul class="nav_link">
+                                    <li class="item_ft"><a href="#">Nhà hàng</a></li>	
+                                    <li class="item_ft"><a href="#">Tiệc & Sự kiện</a></li>	
+                                    <li class="item_ft"><a href="#">Spa & Massaget</a></li>		                                							
+                                </ul>
+                            </div>
+                            <div class="col3_ft">
+                                <h4 class="tittle_ft">Liên hệ</h4>
+                                <ul class="nav_link">
+                                    <li class="contact_ft"><i class="fa-sharp fa-solid fa-location-dot"></i><a href="">  1234 Nguyễn Thị Minh Khai, phường 4, quận 9, Đà Lạt, Lâm Đồng</a></li>	
+                                    <li class="contact_ft"><i class="fa-solid fa-phone"></i><a href="">  0777092128</a></li>	
+                                    <li class="contact_ft"><i class="fa-solid fa-envelope"></i><a href="">  0777092128</a></li>	
+                                    <div class="btn_map ">
+                                       <a href="#"><span>Xem đường đi</span></a>
+                                    </div>                             							
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="end_footer">
+                <div class="footer_copyright">
+                    <div class="min_warp2">
+                       <div class="row_ft">
+                        <div class="col50">
+                            <p class="p_ft" >Copyright © 2024 <a href="#"> Maple Inn</a>. 
+                                <a rel="nofollow noopener" target="_blank" href="">Powered by Haravan</a>
+                            </p>
+                        </div>
+                        <div class="col50">
+                            <ul class="copyright_link">
+                                <li class="item">
+                                    <a href="#" title="Tìm kiếm">Tìm kiếm</a>
+                                </li>                                
+                                <li class="item">
+                                    <a href="#" title="Giới thiệu">Giới thiệu</a>
+                                </li>                             
+                                <li class="item">
+                                    <a href="#" title="Chính sách đổi trả">Chính sách đổi trả</a>
+                                </li>                                
+                                <li class="item">
+                                    <a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a>
+                                </li>                                                      
+                                <li class="item">
+                                    <a href="#" title="Liên hệ">Liên hệ</a>
+                                </li>                                    
+                            </ul>
+                        </div>
+
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+<script src="../js/button.js"></script>
+<script>
+    AOS.init();
+//     var swiper = new Swiper(".mySwiper", {
+//       navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//       },
+//     });
+//     var swiper = new Swiper('.mySwiper', {
+//     loop: true,  // Lặp lại các slide sau khi hết
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
+//     autoplay: {
+//         delay: 6000,  // Chuyển slide sau mỗi 3 giây
+//         disableOnInteraction: false,  // Tiếp tục autoplay ngay cả khi có tương tác
+//     },
+//     spaceBetween: 30,  // Khoảng cách giữa các slide
+//     slidesPerView: 1,  // Số slide hiển thị cùng lúc
+// });
+var swiper = new Swiper('.mySwiper', {
+    loop: true, // Cho phép lặp vòng các slide
+    slidesPerView: 3, // Hiển thị 3 slide cùng lúc
+    centeredSlides: true, // Giữ slide giữa luôn ở trung tâm
+    spaceBetween: 30, // Khoảng cách giữa các slide
+    autoplay: {
+        delay: 3500, // Tự động chuyển slide sau 3 giây
+        disableOnInteraction: false, // Tự động tiếp tục sau khi tương tác
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+  </script>
+</html>

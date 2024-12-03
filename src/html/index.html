@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dịch Vụ PARADICO</title>
+      <!-- font awsome 6 -->
+      <link rel="stylesheet" href="../css/font-awesome-pro/css/all.css">
+      <link rel="stylesheet" href="../css/font-awesome-pro/css/all.min.css">
+      <link rel="stylesheet" href="../css/font-awesome-pro/css/fontawesome.css">
+      <link rel="stylesheet" href="../css/font-awesome-pro/css/fontawesome.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+      <!-- font awsome 6 -->
+       <!-- dta aos -->
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- dta aos -->
+       <!-- font chữ -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <!-- font chữ -->
+        <!-- link css -->
+        <link rel="stylesheet" href="/src/css/Dich_Vu.css">
+        <!-- link css -->
+</head>
+<body>
+    <div class="container">
+       <!-- header -->
+        <header>
+            <div class="bg_menu" data-aos="fade" data-aos-easing="linear" data-aos-duration="700">
+                <div class="min_warp">
+                    <div class="wap_menu">
+                        <div class="logo">
+                            <a href="/">
+                                <img src="../../public/image/Logo.png" alt="Logo PARADICO">
+                            </a>
+                        </div>
+                        <!-- logo -->
+                        <nav class="navbar">
+                            <ul class="list_menu">
+                                <li class="">
+                                    <a href="index.html" title="Trang chủ"> 
+                                        Trang chủ
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/" title="Trang chủ"> 
+                                    Về Maple Inn
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/" title="Trang chủ"> 
+                                        Phòng
+                                    </a>
+                                </li>
+                                <li class="has-submenu active ">
+                                    <a href="" title="Dịch vụ tại Maple Inn">
+                                        Dịch vụ tại Maple Inn
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" x="0" y="0" viewBox="0 0 128 128"><g><path d="m64 88c-1.023 0-2.047-.391-2.828-1.172l-40-40c-1.563-1.563-1.563-4.094 0-5.656s4.094-1.563 5.656 0l37.172 37.172 37.172-37.172c1.563-1.563 4.094-1.563 5.656 0s1.563 4.094 0 5.656l-40 40c-.781.781-1.805 1.172-2.828 1.172z"></path></g></svg>
+                                    </a>
+                                    <ul class="menuList-submain">
+                                        <li class="active">
+                                            <a href="./Dich_Vu.html" title="Nhà hàng"> 
+                                                Nhà hàng
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="./Tiec_sk.html" title="Tiệc &amp; Sự kiện"> 
+                                                Tiệc &amp; Sự kiện
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="./Spa_ms.html" title="Spa &amp; Massage"> 
+                                                Spa &amp; Massage
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                    <a href="/" title="Trang chủ"> 
+                                    Cẩm nang du lịch
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/" title="Trang chủ"> 
+                                    Giới thiệu
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="./Lien_he.html" title="Trang chủ"> 
+                                    Liên hệ
+                                    </a>
+                                </li>
+                            </ul>  
+                            
+                            <div class="contact_menu">
+                                <a href="#"><button class="ocean-button" id="oceanButton">Liên hệ ngay</button></a>
+                            </div>
+                        </nav>
+                        <!-- nav -->
+                        <!-- navmobile -->
+                        <!-- hiển thị thanh slidebar mobile bằng input checked -->
+                        <label  for="click_open_close" class="menu_icon" id="menu-icon"><i class="fa-light fa-bars"></i></label>
+                        <input hidden type="checkbox" name="" class="nav_input" id="click_open_close">
+                        <label  for="click_open_close" class="box_overlay"></label>
+                            <!-- slidebar mobile -->
+                            <div class="sidebar_mobile">
+                                <label  for="click_open_close" class="x_sdide_bar"><i class="fa-sharp fa-regular fa-x"></i></label>
+                                <div class="logo_mb">
+                                    <a href="#">
+                                        <img src="../../public/image/Logo.png" alt="Logo PARADICO">
+                                    </a>
+                                </div>
+                                <div class="dkdn_mb">
+                                    <p class="t_dkdn_mb">Đăng nhập để hưởng những đặc quyền dành riêng cho thành viên.</p>
+                                    <a href="#">Đăng nhập &amp; Đăng ký</a>
+                                </div>
+                                <div class="wap_menu_mobile"> 
+                                    <ul class="menu_mobile">
+                                        <li><a href="./index.html" class="active" >Trang chủ</a></li>
+                                        <li class="has-submenu">
+                                            <a href="#" class="submenu-toggle" >Về Paradico <span><i class="fa-light fa-chevron-down"></i></span></a>
+                                            <ul class="submenu_mobile">
+                                                <li><a href="XXXX">blabla</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="XXXX">Phòng</a></li>
+                                        <li class="has-submenu">
+                                            <a href="./Dich_Vu.html" class="submenu-toggle" >Dịch vụ tại Paradico <span><i class="fa-light fa-chevron-down"></i></span></a>
+                                            <ul class="submenu_mobile">
+                                                <li><a href="./dvkd_map.html">Đơn vị kinh doanh Map</a></li>
+                                                <li><a href="./dvkd_navi.html">Đơn vị kinh doanh Navigation</a></li>
+                                                <li><a href="./dvkd_tracking.html">Đơn vị kinh doanh Tracking</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-submenu">
+                                            <a href="XXXX" class="submenu-toggle" >Cẩm nang du lịch <span><i class="fa-light fa-chevron-down"></i></span></a>
+                                            <ul class="submenu_mobile">
+                                                <li><a href="XXXX">Kiểm tra bảo hành</a></li>
+                                                <li><a href="XXXX">Kích hoạt bảo hành </a></li>
+                                                <li><a href="XXXX">Câu hỏi thường gặp </a></li>
+                                                <li><a href="XXXX">Map API </a></li>   
+                                            </ul>
+                                        </li>
+                                        <li class="has-submenu">
+                                            <a href="XXXX" class="submenu-toggle" >Giới thiệu<span><i class="fa-light fa-chevron-down"></i></span></a>
+                                            <ul class="submenu_mobile">
+                                                <li><a href="#">Chính sách bảo mật</a></li>
+                                                <li><a href="#">Chính sách đổi trả</a></li>
+                                                <li><a href="#">Chính sách bảo hành</a></li>
+                                                <li><a href="#">Chính sách giao nhận</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="./Lien_he.html">Liên hệ</a></li>
+                                    </ul>
+                                    <ul class="list_social_rwd">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-brands fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-brands fa-x-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-brands fa-square-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-brands fa-youtube"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- slidebar mobile -->
+                        <!-- navmobile -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header -->
+        <main>
+            <div class="banner index">
+                <div class="wap_name_dt_rr index">
+                     <div class="min_warp2">
+                        <div class="name_menu_date_restaurant"  data-aos="fade-up" data-aos-duration="3000">
+                            <h1 class="restaurant index">Khám phá Maple Inn</h1>
+                            <p class="date index">Nơi nghỉ dưỡng ấm áp, yên tĩnh và giải trí</p>
+                            <div class="btn-more text-center">
+                                <a href="#"><button class="ocean-button index" id="oceanButton">Liên Hệ Ngay</button></a>
+                            </div>
+                        </div>
+                   </div>
+               </div>
+            </div>
+            <div class="section_menu">
+                <div class="form_calendar_booking">
+                    <div class="min_warp3">
+                        <div class="form_booking">
+                           <div class="checkin_homstay t-datepicker">
+                                <div class="date_check_in search_item">
+                                    <div class="seach_icons">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z" stroke="#AAAFB6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M16.5 2.25V5.25" stroke="#AAAFB6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M7.5 2.25V5.25" stroke="#AAAFB6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M3.75 8.25H20.25" stroke="#AAAFB6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="search-form">
+                                        <label>Ngày nhận phòng</label>
+                                        <div class="t-check-in">
+                                            <div class="t-dates t-date-check-in">
+                                                <label class="t-date-info-title"></label>
+                                                <span class="t-day-check-in">02/</span>
+                                                <span class="t-month-check-in">10/</span>
+                                                <span class="t-year-check-in">2024</span>
+                                            </div>
+                                            <input type="hidden" class="t-input-check-in" value="02/10/2024" name="t-start"></div>
+                                    </div>
+                                    <input type="hidden" name="date_range" id="search_when" value="" placeholder="Chọn">
+                                </div>
+                                <div class="date_check_out search_item">
+                                    <div class="seach_icons">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z" stroke="#AAAFB6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M16.5 2.25V5.25" stroke="#AAAFB6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M7.5 2.25V5.25" stroke="#AAAFB6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M3.75 8.25H20.25" stroke="#AAAFB6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="search-form">
+                                        <label>Ngày trả phòng</label>
+                                        <div class="t-check-in">
+                                            <div class="t-dates t-date-check-in">
+                                                <label class="t-date-info-title"></label>
+                                                <span class="t-day-check-in">02/</span>
+                                                <span class="t-month-check-in">10/</span>
+                                                <span class="t-year-check-in">2024</span>
+                                            </div>
+                                            <input type="hidden" class="t-input-check-in" value="02/10/2024" name="t-start"></div>
+                                    </div>
+                                </div>
+
+                           </div>
+                            <div class="number_people search_item">
+                                <div class="seach_icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 350.1l0 1.9-32 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L447.3 128.1c-12.3-1-25 3-34.8 11.7c-35.4 31.6-65.6 67.7-87.3 102.8C304.3 276.5 288 314.9 288 350.1zM480 512c-88.4 0-160-71.6-160-160c0-76.7 62.5-144.7 107.2-179.4c5-3.9 10.9-5.8 16.8-5.8c7.9-.1 16 3.1 22 9.2l46 46 11.3-11.3c11.7-11.7 30.6-12.7 42.3-1C624.5 268 640 320.2 640 352c0 88.4-71.6 160-160 160zm64-111.8c0-36.5-37-73-54.8-88.4c-5.4-4.7-13.1-4.7-18.5 0C453 327.1 416 363.6 416 400.2c0 35.3 28.7 64 64 64s64-28.7 64-64z"/></svg>
+                                </div>
+                                <div class="search-form">
+                                    <div class="group-dropdown-qty">
+                                        <label for="homestay-type">Loại homestay</label>
+                                        <select id="homestay-type" name="homestay-type">
+                                          <option value="beachfront">Homestay gần biển</option>
+                                          <option value="mountain">Homestay trên núi</option>
+                                          <option value="city">Homestay trong thành phố</option>
+                                          <option value="countryside">Homestay vùng quê</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="btn-more text-center search_btn ">
+                                <a href="#"><button class="ocean-button book_room" id="oceanButton">Đặt phòng</button></a>
+                            </div>
+
+                        </div>
+                        <div class="row140">
+                            <div class="row2" >
+                                <div class="col-lg-4 col-md-6 col-12 banner--1" data-aos="fade-up" data-aos-duration="1400">
+                                    <div class="about-banner">
+                                        <picture>
+                                            <source media="(max-width: 991px)" srcset="//theme.hstatic.net/200000909393/1001269498/14/home_about_banner_mb_1_1024x1024.jpg?v=2537">
+                                            <source media="(min-width: 992px)" srcset="//theme.hstatic.net/200000909393/1001269498/14/home_about_banner_1.jpg?v=2537">
+                                            <img src="//theme.hstatic.net/200000909393/1001269498/14/home_about_banner_1.jpg?v=2537" alt="banner 1">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-12 banner--2" data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="about-banner banner-content">
+                                        <picture>
+                                            <source media="(max-width: 991px)" srcset="//theme.hstatic.net/200000909393/1001269498/14/home_about_banner_mb_2_1024x1024.jpg?v=2537">
+                                            <source media="(min-width: 992px)" srcset="//theme.hstatic.net/200000909393/1001269498/14/home_about_banner_2.jpg?v=2537">
+                                            <img src="//theme.hstatic.net/200000909393/1001269498/14/home_about_banner_2.jpg?v=2537" alt="banner 2">
+                                        </picture>
+                                        <div class="about-content text-center">
+                                            <div class="heading-title">
+                                                <p class="title1">Chào mừng bạn đến với Maple Inn</p>
+                                                <h2 class="title2">Ngay trung tâm thành phố, cảnh quan tuyệt đẹp</h2>
+                                            </div>
+                                            <div class="btn_map col4">
+                                                <a href="#"><span>Xem thêm</span></a>
+                                            </div>    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12 banner--3" data-aos="fade-up" data-aos-duration="3000">
+                                    <div class="about-banner">
+                                        <picture>
+                                            <source media="(max-width: 991px)" srcset="//theme.hstatic.net/200000909393/1001269498/14/home_about_banner_mb_3_1024x1024.jpg?v=2537">
+                                            <source media="(min-width: 992px)" srcset="//theme.hstatic.net/200000909393/1001269498/14/home_about_banner_3.jpg?v=2537">
+                                            <img src="//theme.hstatic.net/200000909393/1001269498/14/home_about_banner_3.jpg?v=2537" alt="banner 3">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+               </div>
+<!-- show homstay  -->
+               <div class="min_warp2">
+                    <div class="row8">
+                        <div class="heading_title row_left" data-aos="fade-up" data-aos-duration="1500">
+                            <p class="title1">Tận hưởng trải nghiệm lưu trú đẳng cấp</p>
+                            <h2 class="title2 show_room">Nơi nghỉ dưỡng của bạn</h2>
+                            <p class="des_pro show_room">Trốn đến những ngọn núi và thung lũng xinh đẹp nơi giấc mơ thành hiện thực. Văn hóa, thiên nhiên, suối và ẩm thực. Đắm mình trong những phẩm chất phục hồi của thiên nhiên, tránh xa những xáo trộn của cuộc sống thường ngày.</p> 
+                        </div>
+                        <div class="btn_slide">
+                            <div class="owl-nav">
+                                <button type="button" role="presentation" class="owl-prev" aria-label="prev slide">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g transform="matrix(-1,-1.2246467991473532e-16,1.2246467991473532e-16,-1,511.9994964599609,511.99959468841564)"><g><g><path d="M367.954,213.588L160.67,5.872c-7.804-7.819-20.467-7.831-28.284-0.029c-7.819,7.802-7.832,20.465-0.03,28.284l207.299,207.731c7.798,7.798,7.798,20.486-0.015,28.299L132.356,477.873c-7.802,7.819-7.789,20.482,0.03,28.284c3.903,3.896,9.016,5.843,14.127,5.843c5.125,0,10.25-1.958,14.157-5.873l207.269-207.701C391.333,275.032,391.333,236.967,367.954,213.588z"></path></g></g></g></svg>
+                                </button>
+                                <button type="button" role="presentation" class="owl-next" aria-label="next slide">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><g><g><path d="M367.954,213.588L160.67,5.872c-7.804-7.819-20.467-7.831-28.284-0.029c-7.819,7.802-7.832,20.465-0.03,28.284l207.299,207.731c7.798,7.798,7.798,20.486-0.015,28.299L132.356,477.873c-7.802,7.819-7.789,20.482,0.03,28.284c3.903,3.896,9.016,5.843,14.127,5.843c5.125,0,10.25-1.958,14.157-5.873l207.269-207.701C391.333,275.032,391.333,236.967,367.954,213.588z"></path></g></g></g></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="homestay_list" data-aos="fade-up" data-aos-duration="2000">
+                            <li >
+                                <a href="">
+                                    <div class="img_homstay">
+                                        <div class="pro-price">
+                                            <span class="price">1,400,000₫</span>
+                                            <span>/ Đêm</span>
+                                        </div>
+                                        <img src="../../public/image/HST1.png" alt="">
+                                    </div>
+                                    <div class="des_hst">
+                                        <div class="proloop-detail">
+                                            <h3><a href="/products/double-suite">Double Suite</a></h3>
+                                            <div class="pro-tag">
+                                                <div class="tag-item tag-area">
+                                                    <span>150</span> <span class="tag-unit">m<sup>2</sup></span>
+                                                </div>                                     
+                                                <div class="tag-item tag-guests">
+                                                    <span>10</span> <span class="tag-unit">Guests</span>
+                                                </div>
+                                                <div class="tag-item tag-bed">
+                                                    <span>5</span> <span class="tag-unit">Beds</span>
+                                                </div>
+                                                <div class="tag-item tag-bathroom">
+                                                    <span>4</span> <span class="tag-unit">Bathroom</span>
+                                                </div>
+                                            </div>
+                                            <div class="pro-desc">
+                                                Double Suite rộng 150m² với thiết kế trong suốt, nằm ở tầng cao nhất của khách sạn, mang đến tầm nhìn toàn cảnh tuyệt đẹp...
+                                            </div>
+                                            <div class="btn_ev">
+                                                <a href="#">
+                                                    <span>Xem chi tiết
+                                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 490.8 490.8" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path style="" d="M135.685,3.128c-4.237-4.093-10.99-3.975-15.083,0.262c-3.992,4.134-3.992,10.687,0,14.82l227.115,227.136L120.581,472.461c-4.237,4.093-4.354,10.845-0.262,15.083c4.093,4.237,10.845,4.354,15.083,0.262c0.089-0.086,0.176-0.173,0.262-0.262l234.667-234.667c4.164-4.165,4.164-10.917,0-15.083L135.685,3.128z" fill="#f44336" data-original="#f44336"></path><path d="M128.133,490.68c-5.891,0.011-10.675-4.757-10.686-10.648c-0.005-2.84,1.123-5.565,3.134-7.571l227.136-227.115L120.581,18.232c-4.171-4.171-4.171-10.933,0-15.104c4.171-4.171,10.933-4.171,15.104,0l234.667,234.667c4.164,4.165,4.164,10.917,0,15.083L135.685,487.544C133.685,489.551,130.967,490.68,128.133,490.68z" fill="#000000" data-original="#000000"></path></g></svg>
+                                                    </span>
+                                                </a>
+                                            </div>   
+                                            
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img_homstay">
+                                        <div class="pro-price">
+                                            <span class="price">1,400,000₫</span>
+                                            <span>/ Đêm</span>
+                                        </div>
+                                        <img src="../../public/image/HST1.png" alt="">
+                                    </div>
+                                    <div class="des_hst">
+                                        <div class="proloop-detail">
+                                            <h3><a href="/products/double-suite">Double Suite</a></h3>
+                                            <div class="pro-tag">
+                                                <div class="tag-item tag-area">
+                                                    <span>150</span> <span class="tag-unit">m<sup>2</sup></span>
+                                                </div>                                     
+                                                <div class="tag-item tag-guests">
+                                                    <span>10</span> <span class="tag-unit">Guests</span>
+                                                </div>
+                                                <div class="tag-item tag-bed">
+                                                    <span>5</span> <span class="tag-unit">Beds</span>
+                                                </div>
+                                                <div class="tag-item tag-bathroom">
+                                                    <span>4</span> <span class="tag-unit">Bathroom</span>
+                                                </div>
+                                            </div>
+                                            <div class="pro-desc">
+                                                Double Suite rộng 150m² với thiết kế trong suốt, nằm ở tầng cao nhất của khách sạn, mang đến tầm nhìn toàn cảnh tuyệt đẹp...
+                                            </div>
+                                            <div class="btn_ev">
+                                                <a href="#">
+                                                    <span>Xem chi tiết
+                                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 490.8 490.8" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path style="" d="M135.685,3.128c-4.237-4.093-10.99-3.975-15.083,0.262c-3.992,4.134-3.992,10.687,0,14.82l227.115,227.136L120.581,472.461c-4.237,4.093-4.354,10.845-0.262,15.083c4.093,4.237,10.845,4.354,15.083,0.262c0.089-0.086,0.176-0.173,0.262-0.262l234.667-234.667c4.164-4.165,4.164-10.917,0-15.083L135.685,3.128z" fill="#f44336" data-original="#f44336"></path><path d="M128.133,490.68c-5.891,0.011-10.675-4.757-10.686-10.648c-0.005-2.84,1.123-5.565,3.134-7.571l227.136-227.115L120.581,18.232c-4.171-4.171-4.171-10.933,0-15.104c4.171-4.171,10.933-4.171,15.104,0l234.667,234.667c4.164,4.165,4.164,10.917,0,15.083L135.685,487.544C133.685,489.551,130.967,490.68,128.133,490.68z" fill="#000000" data-original="#000000"></path></g></svg>
+                                                    </span>
+                                                </a>
+                                            </div>   
+                                            
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img_homstay">
+                                        <div class="pro-price">
+                                            <span class="price">1,400,000₫</span>
+                                            <span>/ Đêm</span>
+                                        </div>
+                                        <img src="../../public/image/HST1.png" alt="">
+                                    </div>
+                                    <div class="des_hst">
+                                        <div class="proloop-detail">
+                                            <h3><a href="/products/double-suite">Double Suite</a></h3>
+                                            <div class="pro-tag">
+                                                <div class="tag-item tag-area">
+                                                    <span>150</span> <span class="tag-unit">m<sup>2</sup></span>
+                                                </div>                                     
+                                                <div class="tag-item tag-guests">
+                                                    <span>10</span> <span class="tag-unit">Guests</span>
+                                                </div>
+                                                <div class="tag-item tag-bed">
+                                                    <span>5</span> <span class="tag-unit">Beds</span>
+                                                </div>
+                                                <div class="tag-item tag-bathroom">
+                                                    <span>4</span> <span class="tag-unit">Bathroom</span>
+                                                </div>
+                                            </div>
+                                            <div class="pro-desc">
+                                                Double Suite rộng 150m² với thiết kế trong suốt, nằm ở tầng cao nhất của khách sạn, mang đến tầm nhìn toàn cảnh tuyệt đẹp...
+                                            </div>
+                                            <div class="btn_ev">
+                                                <a href="#">
+                                                    <span>Xem chi tiết
+                                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 490.8 490.8" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path style="" d="M135.685,3.128c-4.237-4.093-10.99-3.975-15.083,0.262c-3.992,4.134-3.992,10.687,0,14.82l227.115,227.136L120.581,472.461c-4.237,4.093-4.354,10.845-0.262,15.083c4.093,4.237,10.845,4.354,15.083,0.262c0.089-0.086,0.176-0.173,0.262-0.262l234.667-234.667c4.164-4.165,4.164-10.917,0-15.083L135.685,3.128z" fill="#f44336" data-original="#f44336"></path><path d="M128.133,490.68c-5.891,0.011-10.675-4.757-10.686-10.648c-0.005-2.84,1.123-5.565,3.134-7.571l227.136-227.115L120.581,18.232c-4.171-4.171-4.171-10.933,0-15.104c4.171-4.171,10.933-4.171,15.104,0l234.667,234.667c4.164,4.165,4.164,10.917,0,15.083L135.685,487.544C133.685,489.551,130.967,490.68,128.133,490.68z" fill="#000000" data-original="#000000"></path></g></svg>
+                                                    </span>
+                                                </a>
+                                            </div>   
+                                            
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+               </div>
+<!-- show homstay  -->
+<!-- service -->
+                <div class="bg_service" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="min_warp2">
+                        <div class="row_warp">
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="service-item">
+                                    <div class="item-icon">
+                                        <img src="//theme.hstatic.net/200000909393/1001269498/14/home_service_img_1.jpg?v=2537" alt="Dịch vụ đưa đón tại sân bay">
+                                    </div>
+                                    <div class="item-detail">
+                                        <h3 class="detail-title">Dịch vụ đưa đón tại sân bay</h3>
+                                        <p class="detail-desc">Lorem ipsum proin gravida velit auctor alueut aenean sollicitu din, lorem auci elit consequat ipsutissem niuis sed odio sit amet a sit amet.</p>
+                                    </div>
+                                </div>
+                            </div>                
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="service-item">
+                                    <div class="item-icon">
+                                        <img src="//theme.hstatic.net/200000909393/1001269498/14/home_service_img_2.jpg?v=2537" alt="Dịch vụ quản gia">
+                                    </div>
+                                    <div class="item-detail">
+                                        <h3 class="detail-title">Dịch vụ quản gia</h3>
+                                        <p class="detail-desc">Lorem ipsum proin gravida velit auctor alueut aenean sollicitu din, lorem auci elit consequat ipsutissem niuis sed odio sit amet a sit amet.</p>
+                                    </div>
+                                </div>
+                            </div>      
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="service-item">
+                                    <div class="item-icon">
+                                        <img src="//theme.hstatic.net/200000909393/1001269498/14/home_service_img_3.jpg?v=2537" alt="Wifi &amp; Internet">
+                                    </div>
+                                    <div class="item-detail">
+                                        <h3 class="detail-title">Wifi &amp; Internet</h3>
+                                        <p class="detail-desc">Lorem ipsum proin gravida velit auctor alueut aenean sollicitu din, lorem auci elit consequat ipsutissem niuis sed odio sit amet a sit amet.</p>
+                                    </div>
+                                </div>
+                            </div>       
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="service-item">
+                                    <div class="item-icon">
+                                        <img src="//theme.hstatic.net/200000909393/1001269498/14/home_service_img_4.jpg?v=2537" alt="Dịch vụ giặt ủi">
+                                    </div>
+                                    <div class="item-detail">
+                                        <h3 class="detail-title">Dịch vụ giặt ủi</h3>
+                                        <p class="detail-desc">Lorem ipsum proin gravida velit auctor alueut aenean sollicitu din, lorem auci elit consequat ipsutissem niuis sed odio sit amet a sit amet.</p>
+                                    </div>
+                                </div>
+                            </div>           
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="service-item">
+                                    <div class="item-icon">
+                                        <img src="//theme.hstatic.net/200000909393/1001269498/14/home_service_img_5.jpg?v=2537" alt="Bữa sáng tại phòng">
+                                    </div>
+                                    <div class="item-detail">
+                                        <h3 class="detail-title">Bữa sáng tại phòng</h3>
+                                        <p class="detail-desc">Lorem ipsum proin gravida velit auctor alueut aenean sollicitu din, lorem auci elit consequat ipsutissem niuis sed odio sit amet a sit amet.</p>
+                                    </div>
+                                </div>
+                            </div>              
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="service-item">
+                                    <div class="item-icon">
+                                        <img src="//theme.hstatic.net/200000909393/1001269498/14/home_service_img_6.jpg?v=2537" alt="Chỗ đậu xe riêng">
+                                    </div>
+                                    <div class="item-detail">
+                                        <h3 class="detail-title">Chỗ đậu xe riêng</h3>
+                                        <p class="detail-desc">Lorem ipsum proin gravida velit auctor alueut aenean sollicitu din, lorem auci elit consequat ipsutissem niuis sed odio sit amet a sit amet.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- service -->
+<!-- CNdu-lich -->
+                <div class="bg_blog row8">
+                    <div class="min_warp2 ">
+                        <div class="heading_title" data-aos="fade-up" data-aos-duration="1500">
+                            <p class="title1">Hơn cả cảnh núi non</p>
+                            <h2 class="title2 show_room">Trải nghiệm không thể quên</h2>
+                        </div>
+                        <div class="row2 list-blog justify-content-between align-items-center wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                            <div class="item-blog blog--1" data-aos="fade-up" data-aos-duration="1500">
+                                <a href="XXXX" title="Paddling Tour" aria-label="Paddling Tour">
+                                    <div class="article-loop item-article" style="--bg-img:url(https://file.hstatic.net/200000909393/article/img-69-800x600-1_3f16d7045e9a4dd49d5acc42384a3d5f.jpg)">   
+                                        <div class="item-pd">
+                                            <div class="media-article">
+                                                <img class=" opcti0 ls-is-cached lazyloaded" data-src="//file.hstatic.net/200000909393/article/img-69-800x600-1_3f16d7045e9a4dd49d5acc42384a3d5f_grande.jpg" alt="Paddling Tour" src="../../public/image/index1.png">
+                                                <time datetime="2024-08-22">22 Tháng 08, 2024</time>
+                                            </div>
+                                            <div class="info-article">
+                                                <div class="title-article">
+                                                    <h4 class="tittle_camnang">
+                                                        Paddling Tour
+                                                    </h4>
+                                                </div>
+                                                <div class="short-article">
+                                                    Banff National Park’s biggest lake allows you to paddle for miles and enjoy breathtaking views. Lorem ipsum dolor...
+                                                </div>
+                                                <div class="btn_ev camnang">
+                                                    <a href="#">
+                                                        <span class="clo_white">Xem thêm
+                                                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 490.8 490.8" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path style="" d="M135.685,3.128c-4.237-4.093-10.99-3.975-15.083,0.262c-3.992,4.134-3.992,10.687,0,14.82l227.115,227.136L120.581,472.461c-4.237,4.093-4.354,10.845-0.262,15.083c4.093,4.237,10.845,4.354,15.083,0.262c0.089-0.086,0.176-0.173,0.262-0.262l234.667-234.667c4.164-4.165,4.164-10.917,0-15.083L135.685,3.128z" fill="#f44336" data-original="#f44336"></path><path d="M128.133,490.68c-5.891,0.011-10.675-4.757-10.686-10.648c-0.005-2.84,1.123-5.565,3.134-7.571l227.136-227.115L120.581,18.232c-4.171-4.171-4.171-10.933,0-15.104c4.171-4.171,10.933-4.171,15.104,0l234.667,234.667c4.164,4.165,4.164,10.917,0,15.083L135.685,487.544C133.685,489.551,130.967,490.68,128.133,490.68z" fill="#000000" data-original="#000000"></path></g></svg>
+                                                        </span>
+                                                    </a>
+                                                </div>   
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item-blog blog--2" data-aos="fade-up" data-aos-duration="2500">
+                                <div class="article-loop item-article" style="--bg-img:url(https://file.hstatic.net/200000909393/article/img-68_93702bac2c97447b9475c6bb07a485d8.jpg)">
+                                    <div class="media-article">
+                                        <a href="/blogs/news/mountain-hiking" title="Mountain Hiking" aria-label="Mountain Hiking">
+                                            <img class=" ls-is-cached lazyloaded" data-src="https://file.hstatic.net/200000909393/article/img-68_93702bac2c97447b9475c6bb07a485d8.jpg" alt="Mountain Hiking" src="https://file.hstatic.net/200000909393/article/img-68_93702bac2c97447b9475c6bb07a485d8.jpg">
+                                            <time datetime="2024-08-22">22 Tháng 08, 2024</time>
+                                        </a>	
+                                    </div>
+                                    <div class="info-article">
+                                        <div class="title-article">
+                                            <h4 class="tittle_camnang">
+                                                <a href="XXXX">Mountain Hiking</a>
+                                            </h4>
+                                        </div>
+                                        <div class="short-article">
+                                            With over 1,600 kilometres (994 miles) of trails, Banff National Park offers adventurers some of the best hiking...
+                                        </div>
+                                        <div class="btn_ev camnang">
+                                            <a href="#">
+                                                <span>Xem chi tiết
+                                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 490.8 490.8" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path style="" d="M135.685,3.128c-4.237-4.093-10.99-3.975-15.083,0.262c-3.992,4.134-3.992,10.687,0,14.82l227.115,227.136L120.581,472.461c-4.237,4.093-4.354,10.845-0.262,15.083c4.093,4.237,10.845,4.354,15.083,0.262c0.089-0.086,0.176-0.173,0.262-0.262l234.667-234.667c4.164-4.165,4.164-10.917,0-15.083L135.685,3.128z" fill="#f44336" data-original="#f44336"></path><path d="M128.133,490.68c-5.891,0.011-10.675-4.757-10.686-10.648c-0.005-2.84,1.123-5.565,3.134-7.571l227.136-227.115L120.581,18.232c-4.171-4.171-4.171-10.933,0-15.104c4.171-4.171,10.933-4.171,15.104,0l234.667,234.667c4.164,4.165,4.164,10.917,0,15.083L135.685,487.544C133.685,489.551,130.967,490.68,128.133,490.68z" fill="#000000" data-original="#000000"></path></g></svg>
+                                                </span>
+                                            </a>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-blog blog--3" data-aos="fade-up" data-aos-duration="3000">
+                                <div class="article-loop item-article" style="--bg-img:url(https://file.hstatic.net/200000909393/article/img-70_23537e350baa48c5b65a977c872d0b09.jpg)">
+                                    <div class="media-article">
+                                        <a href="/blogs/news/camping-tour" title="Camping Tour" aria-label="Camping Tour">
+                                            <img class=" ls-is-cached lazyloaded" data-src="https://file.hstatic.net/200000909393/article/img-70_23537e350baa48c5b65a977c872d0b09.jpg" alt="Camping Tour" src="https://file.hstatic.net/200000909393/article/img-70_23537e350baa48c5b65a977c872d0b09.jpg">
+                                            <time datetime="2024-08-22">22 Tháng 08, 2024</time>
+                                        </a>	
+                                    </div>
+                                    <div class="info-article">
+                                        <div class="title-article">
+                                            <h4 class="tittle_camnang">
+                                                <a href="XXXX">Camping Tour</a>
+                                            </h4>
+                                        </div>
+                                        <div class="short-article">
+                                            Banff offers a range of camping spots allowing you to experience all of this most gorgeous park’s outdoor...
+                                        </div>
+                                        <div class="btn_ev camnang">
+                                            <a href="XXXX">
+                                                <span>Xem chi tiết
+                                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 490.8 490.8" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path style="" d="M135.685,3.128c-4.237-4.093-10.99-3.975-15.083,0.262c-3.992,4.134-3.992,10.687,0,14.82l227.115,227.136L120.581,472.461c-4.237,4.093-4.354,10.845-0.262,15.083c4.093,4.237,10.845,4.354,15.083,0.262c0.089-0.086,0.176-0.173,0.262-0.262l234.667-234.667c4.164-4.165,4.164-10.917,0-15.083L135.685,3.128z" fill="#f44336" data-original="#f44336"></path><path d="M128.133,490.68c-5.891,0.011-10.675-4.757-10.686-10.648c-0.005-2.84,1.123-5.565,3.134-7.571l227.136-227.115L120.581,18.232c-4.171-4.171-4.171-10.933,0-15.104c4.171-4.171,10.933-4.171,15.104,0l234.667,234.667c4.164,4.165,4.164,10.917,0,15.083L135.685,487.544C133.685,489.551,130.967,490.68,128.133,490.68z" fill="#000000" data-original="#000000"></path></g></svg>
+                                                </span>
+                                            </a>
+                                        </div>   
+                                    </div>
+                                </div>           
+                            </div>
+                        </div>
+                        <div class="blog-content text-center" data-aos="fade-up" data-aos-duration="1500">
+                            <p class="content-desc">
+                                Bên trong nơi nghỉ dưỡng, mọi chi tiết đều được lên kế hoạch và sắp xếp trước để đảm bảo du khách có được trải nghiệm tốt nhất về cuộc sống trên núi.
+                            </p>
+                            <div class="btn-more text-center">
+                                <a href="#"><button class="ocean-button index" id="oceanButton">Liên Hệ Ngay</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ <!-- CNdu-lich -->
+<!-- danh gia  -->
+ 
+ <!-- danh gia -->
+<!-- form email -->
+                <div class="email_newletter" data-aos="fade-up" data-aos-duration="1000" >
+                    <div class="min_warp2">
+                        <div class="row_email">
+                            <div class="col-lg-6 col-12">
+                                <div class="newsletter_title">
+                                    <div class="heading-title">
+                                        <p class="title3">Hãy kết nối cùng Maple Inn</p>
+                                        <h3 class="title4">Đăng ký nhận bản tin của chúng tôi để nhận tin tức, ưu đãi và khuyến mãi.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <form accept-charset="UTF-8" action="#" class="contact_form" method="post">
+                                    <input name="form_type" type="hidden" value="customer">
+                                    <input name="utf8" type="hidden" value="✓">
+                                    <div class="form-group input-group">
+                                        <input type="hidden" id="new_tags" name="#" value="Đăng kí nhận tin">     
+                                        <input required="" type="email" name="#" class="form-control newsletter-input" id="newsletter-email" pattern="^(.)+@[A-Za-z0-9]([A-Za-z0-9.\-]*[A-Za-z0-9])?\.[A-Za-z]{1,13}$" placeholder="Nhập email của bạn" aria-label="Email Address">
+                                        <div class="input_btn">
+                                            <button type="submit" class="cta-submitform newsletter-btn">Đăng ký 
+                                                <span class="icon-btn"><i class="fa fa-send-o"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="check-form">
+                                        <input type="checkbox" id="new_check" required="">
+                                        <span>Đã đọc &amp; Đồng ý <a href="#">Chính sách bảo mật</a></span>
+                                    </div>
+                                    <input id="eb66e25e0d524d97a7478759b2b7d91e" name="g-recaptcha-response" type="hidden"><noscript data-src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></noscript><noscript>grecaptcha.ready(function() {grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', {action: 'submit'}).then(function(token) {document.getElementById('eb66e25e0d524d97a7478759b2b7d91e').value = token;});});</noscript>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- form email -->
+<!-- footer-intagram -->
+                <div class="footer-instagram" data-aos="fade-zoom-in" data-aos-easing="ease-in-out"data-aos-delay="400" data-aos-offset="0">
+                    <div class="min_warp2">
+                        <div class="row_col">
+                            <div class="box_intagram">
+                                <img src="//theme.hstatic.net/200000909393/1001269498/14/home_instagram_img_1.jpg?v=2537" alt="Instgram 1">
+                            </div>   
+                            <div class="box_intagram">
+                                <img src="//theme.hstatic.net/200000909393/1001269498/14/home_instagram_img_2.jpg?v=2537" alt="Instgram 2">
+                            </div>            
+                            <div class="box_intagram">
+                                <img src="//theme.hstatic.net/200000909393/1001269498/14/home_instagram_img_3.jpg?v=2537" alt="Instgram 3">
+                            </div>           
+                            <div class="box_intagram">
+                                <img src="//theme.hstatic.net/200000909393/1001269498/14/home_instagram_img_4.jpg?v=2537" alt="Instgram 4">
+                            </div>           
+                        </div>
+                        <div class="btn-more text-center">
+                            <a href="#"><button class="ocean-button" id="oceanButton"><i class="fa-brands fa-instagram"></i> Theo dõi trên Instagram</button></a>
+                        </div>
+                    </div>
+                </div>
+<!-- footer-intagram -->
+            </div>
+        </main>
+        <footer>
+            <div class="footer_container">
+                <div class="bg_footer">
+                    <div class="min_warp2">
+                        <div class="row" data-aos="fade-up" data-aos-duration="3000">
+                            <div class="col1_ft">
+                                <h2><a href="">Maple Inn</a></h2>
+                                <p>Được thành lập vào năm 1998, Maple Inn tọa lạc trên những ngọn đồi của Lâm Đồng, đưa bạn đắm chìm vào sự kỳ diệu của dãy núi Langbiang của Đà Lạt trên nền trời trong xanh. Chào mừng đến với Maple Inn</p>
+                                <ul class="footer_icon">
+                                    <li class="item_ft"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>		
+                                    <li class="item_ft"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>											
+                                    <li class="item_ft"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>											
+                                    <li class="item_ft"><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>											
+                                    <li class="item_ft"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>											
+                                </ul>
+                            </div>
+                            <div class="col2_ft">
+                                <h4 class="tittle_ft">Về Maple Inn</h4>
+                                <ul class="nav_link">
+                                    <li class="item_ft"><a class="a_nav_link" href="">Tìm kiếm</a></li>
+                                    <li class="item_ft"><a href="#">Giới thiệu</a></li>	
+                                    <li class="item_ft"><a href="#">Chính sách đổi trả</a></li>	
+                                    <li class="item_ft"><a href="#">Chính sách bảo mật</a></li>		
+                                    <li class="item_ft"><a href="#">Điều khoản dịch vụ</a></li>		
+                                    <li class="item_ft"><a href="#">Liên hệ</a></li>											
+                                </ul>
+                            </div>
+                            <div class="col2_ft">
+                                <h4 class="tittle_ft">Liên kết</h4>
+                                <ul class="nav_link">
+                                    <li class="item_ft"><a href="#">Nhà hàng</a></li>	
+                                    <li class="item_ft"><a href="#">Tiệc & Sự kiện</a></li>	
+                                    <li class="item_ft"><a href="#">Spa & Massaget</a></li>		                                							
+                                </ul>
+                            </div>
+                            <div class="col3_ft">
+                                <h4 class="tittle_ft">Liên hệ</h4>
+                                <ul class="nav_link">
+                                    <li class="contact_ft"><i class="fa-sharp fa-solid fa-location-dot"></i><a href="">  1234 Nguyễn Thị Minh Khai, phường 4, quận 9, Đà Lạt, Lâm Đồng</a></li>	
+                                    <li class="contact_ft"><i class="fa-solid fa-phone"></i><a href="">  0777092128</a></li>	
+                                    <li class="contact_ft"><i class="fa-solid fa-envelope"></i><a href="">  0777092128</a></li>	
+                                    <div class="btn_map ">
+                                       <a href="#"><span>Xem đường đi</span></a>
+                                    </div>                             							
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- end footer -->
+            <div class="end_footer">
+                <div class="footer_copyright">
+                    <div class="min_warp2">
+                       <div class="row_ft">
+                        <div class="col50">
+                            <p class="p_ft" >Copyright © 2024 <a href="#"> Maple Inn</a>. 
+                                <a rel="nofollow noopener" target="_blank" href="">Powered by Haravan</a>
+                            </p>
+                        </div>
+                        <div class="col50">
+                            <ul class="copyright_link">
+                                <li class="item">
+                                    <a href="#" title="Tìm kiếm">Tìm kiếm</a>
+                                </li>                                
+                                <li class="item">
+                                    <a href="#" title="Giới thiệu">Giới thiệu</a>
+                                </li>                             
+                                <li class="item">
+                                    <a href="#" title="Chính sách đổi trả">Chính sách đổi trả</a>
+                                </li>                                
+                                <li class="item">
+                                    <a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a>
+                                </li>                                                      
+                                <li class="item">
+                                    <a href="#" title="Liên hệ">Liên hệ</a>
+                                </li>                                    
+                            </ul>
+                        </div>
+
+                       </div>
+                    </div>
+                </div>
+            </div>
+<!-- end footer -->
+        </footer>
+   </div>
+</body>
+<script src="../js/button.js"></script>
+<script src="../js/menu_mobile.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>

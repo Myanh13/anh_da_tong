@@ -1,0 +1,882 @@
+.head_admin{
+}
+.Navigation{
+    padding-left: 15px;
+    margin-bottom: 10px;
+    color: #dfebff;
+}
+.admin_main{
+    width: 79%;
+    float: right;
+}
+.container_admin_para {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar  */
+.sidebar_admin_para {
+    width: 20%;
+    background-color: #062544;
+    color: white;
+    padding-top: 20px;
+    position: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s ease-in-out;
+}
+
+.logo_admin_para img {
+    height: 100px;
+}
+
+.sidebar_admin_para .logo_admin_para {
+    text-align: center;
+    margin-bottom: 5px;
+    border-bottom: 0.25px solid #fff;
+}
+
+.sidebar_admin_para .logo_admin_para h2 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sidebar_admin_para .navigation_admin_para ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar_admin_para .navigation_admin_para ul li {
+    margin: 10px 0;
+    position: relative;
+}
+
+.sidebar_admin_para .navigation_admin_para ul li .menu-toggle_admin_para {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar_admin_para .navigation_admin_para ul li .menu-toggle_admin_para:hover {
+    background-color: #34495e;
+    color: #33b0e0;
+}
+
+.sidebar_admin_para .badge_admin_para {
+    background-color: #e74c3c;
+    border-radius: 50%;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+}
+
+/* Sub-menu mở/đóng */
+.sub-menu_admin_para {
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    max-height: 0; /* Menu con đóng */
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.sub-menu_admin_para.open {
+    max-height: 200px; /* Đủ lớn để hiển thị menu con */
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.sub-menu_admin_para.closed {
+    max-height: 0;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.sub-menu_admin_para li a {
+    color: #70809a;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sub-menu_admin_para li a:hover {
+    background-color: #ececec85;
+}
+/* Logout Button */
+.logout_admin_para {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .logout_button {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .logout_button:hover {
+    background-color: #c82333;
+  }
+
+  /* Các icon */
+  
+.icon-tachometer-alt::before {
+    content: "\f0e4"; /* Icon cho Dashboard */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+.icon-home::before {
+    content: "\f015"; /* Font Awesome Home icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+  
+  .icon-list::before {
+    content: "\f022"; /* Font Awesome List icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+  
+  .icon-user::before {
+    content: "\f007"; /* Font Awesome User icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+  
+  .icon-cart::before {
+    content: "\f07a"; /* Font Awesome Cart icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+  
+  .icon-logout::before {
+    content: "\f08b"; /* Font Awesome Sign-out icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+/* Sidebar  */
+
+/* Main Content Styling */
+.main-content_admin_para {
+    width: 80%;
+    float: right;
+    flex: 1;
+    padding: 20px;
+    background-color: #ecf0f1;
+    height: 100px;
+}
+
+contens {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+contens .header-left_admin_para {
+    display: flex;
+    align-items: center;
+}
+
+contens .header-left_admin_para button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #34495e;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+contens .header-left_admin_para input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px;
+}
+
+contens .header-right_admin_para {
+    display: flex;
+    align-items: center;
+}
+
+contens .header-right_admin_para span {
+    margin-right: 15px;
+    font-size: 14px;
+    color: #34495e;
+}
+
+contens .notifications_admin_para {
+    position: relative;
+    cursor: pointer;
+}
+
+contens .notifications_admin_para .badge_admin_para {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+.content_admin_para {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* table */
+/* Wrapper for the table */
+.admin_table_pra_wrapper {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Title of the table */
+.admin_table_pra_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Table styles */
+.admin_table_pra {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.admin_table_pra th, .admin_table_pra td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Header row styles */
+.admin_table_pra th {
+    background-color: #05407D;
+    color: white;
+    font-weight: bold;
+}
+
+/* Odd row background color */
+.admin_table_pra tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect for rows */
+.admin_table_pra tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* Column specific styling */
+.admin_table_pra_image img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.admin_table_pra_price {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.admin_table_pra_status {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.admin_table_pra_description {
+    text-align: left;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Function buttons */
+.admin_table_pra_function {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn_table_admin {
+    background-color: #34db87;
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Red delete button */
+.btn-danger_table_admin {
+    background-color: #e74c3c;
+    border: none;
+    /* margin-right: 10px; */
+}
+
+/* Blue edit button */
+.btn-primary_table_admin {
+    background-color: #3498db;
+    border: none;
+}
+
+.tooltip_table_admin {
+    position: relative;
+    /* display: inline-block;
+    display: flex;
+    justify-content: end; */
+}
+
+.bisai{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.tooltiptext_table_admin {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip_table_admin:hover .tooltiptext_table_admin {
+    visibility: visible;
+    opacity: 1;
+}
+/* add form */
+.container_admin_pra {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group_admin_pra {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 15px;
+}
+.form-group_admin_pra label {
+    flex: 1;
+    margin-right: 10px;
+    align-items: center;
+    display: flex;
+}
+.form-group_admin_pra input, .form-group_admin_pra textarea {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-group_admin_pra textarea {
+    resize: vertical;
+}
+.form-group_admin_pra button {
+    width: 15%;
+    padding: 10px;
+    background-color: #05407D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-group_admin_pra button:hover {
+    background-color: #05407D;
+}
+.admin_table_pra_image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+/* thong ke */
+/* Content */
+.content {
+    padding: 20px;
+    flex: 1;
+  }
+  
+  .cards {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .card p {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  /* Tables */
+  .tables {
+    margin-top: 30px;
+  }
+  
+  .table-container {
+    margin-bottom: 30px;
+  }
+  
+  .table-container h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  td {
+    background: #fff;
+  }
+  
+  /* Chart */
+  .chart {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-placeholder {
+    height: 300px;
+    background: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+/* add form user */
+/* Form Thêm Người Dùng */
+.add-user-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-user-form h3 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .add-user-form div {
+    margin-bottom: 10px;
+  }
+  
+  .add-user-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .add-user-form input,
+  .add-user-form select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .add-user-form button {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .add-user-form button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+  }
+  
+  .add-user-form button:active {
+    transform: translateY(2px);
+  }
+  .wap_btn_admin{
+    display: flex;
+    gap: 20px;
+   
+  }
+/* add form user */
+/* nhanvien */
+/* Wrapper for the table (Nhân viên) */
+.admin_table_pra_nhanvien_wrapper {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  overflow-x: auto; /* Allow horizontal scrolling */
+}
+
+/* Title of the table (Nhân viên) */
+.admin_table_pra_nhanvien_title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Table Styles (Nhân viên) */
+.admin_table_pra_nhanvien {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto; /* Allow dynamic column sizing */
+}
+
+/* Table header styles (Nhân viên) */
+.admin_table_pra_nhanvien thead {
+  background-color: #05407D !important;
+  color: #333;
+  font-weight: bold;
+}
+
+.admin_table_pra_nhanvien th, .admin_table_pra_nhanvien td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Styles for table cells (Nhân viên) */
+.admin_table_pra_nhanvien_id, .admin_table_pra_nhanvien_name, .admin_table_pra_nhanvien_sdt,
+.admin_table_pra_nhanvien_ngaydat, .admin_table_pra_nhanvien_ngaytra, .admin_table_pra_nhanvien_tongtien,
+.admin_table_pra_nhanvien_tiencoc, .admin_table_pra_nhanvien_description {
+  min-width: 120px; /* Set a minimum width for columns */
+}
+
+.admin_table_pra_nhanvien_function {
+  min-width: 150px; /* Ensure space for function buttons */
+}
+
+.red-text {
+  color: red;
+}
+
+.tooltip_table_nhanvien {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltiptext_table_nhanvien {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%; /* Position the tooltip above */
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip_table_nhanvien:hover .tooltiptext_table_nhanvien {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+  .admin_table_pra_nhanvien th, .admin_table_pra_nhanvien td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .admin_table_pra_nhanvien_id, .admin_table_pra_nhanvien_name, .admin_table_pra_nhanvien_sdt,
+  .admin_table_pra_nhanvien_ngaydat, .admin_table_pra_nhanvien_ngaytra, .admin_table_pra_nhanvien_tongtien,
+  .admin_table_pra_nhanvien_tiencoc, .admin_table_pra_nhanvien_description {
+    min-width: 100px;
+  }
+
+  .admin_table_pra_nhanvien_function {
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin_table_pra_nhanvien th, .admin_table_pra_nhanvien td {
+    padding: 6px;
+    font-size: 10px;
+  }
+
+  .admin_table_pra_nhanvien_id, .admin_table_pra_nhanvien_name, .admin_table_pra_nhanvien_sdt,
+  .admin_table_pra_nhanvien_ngaydat, .admin_table_pra_nhanvien_ngaytra, .admin_table_pra_nhanvien_tongtien,
+  .admin_table_pra_nhanvien_tiencoc, .admin_table_pra_nhanvien_description {
+    min-width: 80px;
+  }
+
+  .admin_table_pra_nhanvien_function {
+    min-width: 100px;
+  }
+}
+
+/* nhanvien */
+.payment-container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-container h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .payment-container form {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các phần tử xuống dòng khi không đủ không gian */
+    gap: 15px; /* Khoảng cách giữa các cột */
+  }
+  
+  .form-group.nhanvien {
+    flex: 1 1 calc(50% - 10px); /* Chia đều mỗi nhóm thành 50% chiều rộng, trừ khoảng cách */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .form-group.horizontal {
+    flex: 1 1 100%; /* Nằm ngang, chiếm toàn bộ chiều rộng */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .payment-summary {
+    flex: 1 1 100%; /* Nằm ngang, chiếm toàn bộ chiều rộng */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #eee;
+  }
+  
+  .summary-row, .total-amount-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .summary-label, .total-label {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .summary-value, .total-value {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .total-amount-row {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  
+  .total-label {
+    font-size: 16px;
+  }
+  
+  .total-value {
+    font-size: 16px;
+    color: #007bff;
+  }
+  
+  .button_nhanvien {
+    background-color: #13ce9e;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button_nhanvien:hover {
+    background-color: #0a6e55;
+  }
+  
+  button[type="button"] {
+    flex-shrink: 0; /* Đảm bảo nút bấm không bị co lại */
+  }
+  
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .form-group {
+      flex: 1 1 100%; /* Mỗi nhóm chiếm 100% chiều rộng trên màn hình nhỏ */
+    }
+  
+    .payment-summary {
+      padding: 10px;
+    }
+  }
+  
+  /* Horizontal form group for voucher */
+.voucher-group {
+    flex: 1 1 100%; /* Chiếm toàn bộ chiều rộng */
+  }
+  
+  .voucher-input-container {
+    display: flex;
+    gap: 10px; /* Khoảng cách giữa ô input và nút */
+    align-items: center;
+  }
+  
+  .voucher-input-container input {
+    flex: 1; /* Ô input chiếm phần lớn không gian */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+  }
+  
+  .voucher-input-container input:focus {
+    border-color: #13ce9e;
+    outline: none;
+  }
+  
+  .voucher-input-container button {
+    background-color: #13ce9e;
+    color: white;
+    font-size: 14px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex-shrink: 0; /* Đảm bảo nút không bị co lại */
+  }
+  
+  .voucher-input-container button:hover {
+    background-color: #13ce9e;
+  }
+  
+  .voucher-status {
+    color: #d31212;
+    margin: 0;
+    font-size: 14px;
+    text-align: left;
+  }
+ 
+  

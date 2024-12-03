@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Button with Icon</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    }
+
+    .btn-payment {
+      display: inline-flex;
+      align-items: center;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #4caf50, #2e7d32);
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .btn-payment i {
+      margin-right: 10px;
+      font-size: 20px;
+    }
+
+    .btn-payment:hover {
+      background: linear-gradient(90deg, #2e7d32, #4caf50);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+      transform: translateY(-3px);
+    }
+
+    .btn-payment:active {
+      transform: translateY(1px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <button class="btn-payment">
+    <i class="fas fa-credit-card"></i> Thanh Toán
+  </button>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .profile-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-card {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .profile-avatar img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: red;
+        }
+
+        .profile-info {
+            margin-left: 20px;
+        }
+
+        .profile-info h2 {
+            margin: 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .profile-info .badge {
+            background-color: #d4edda;
+            color: #155724;
+            font-size: 12px;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+
+        .profile-info p {
+            margin: 5px 0;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .profile-actions {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .action {
+            text-align: center;
+            flex: 1;
+            border: 1px dashed #ccc;
+            margin: 0 10px;
+            padding: 10px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .action:hover {
+            border-color: #007bff;
+            background-color: #f1f9ff;
+        }
+
+        .action .icon {
+            font-size: 24px;
+            color: #555;
+        }
+
+        .action p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .action .count {
+            font-weight: bold;
+            font-size: 16px;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-card">
+            <div class="profile-avatar">
+                <img src="https://via.placeholder.com/100/FF0000/FFFFFF?text=Avatar" alt="Avatar">
+            </div>
+            <div class="profile-info">
+                <h2>589. Đỗ Công Danh <span class="badge">Chưa xác thực EKYC</span></h2>
+                <p><span class="icon">📞</span> 0777092128</p>
+                <p><span class="icon">✉️</span> docongdanh357@gmail.com</p>
+            </div>
+        </div>
+        <div class="profile-actions">
+            <div class="action">
+                <span class="icon">💰</span>
+                <p>Ví tiền</p>
+                <p class="count">0</p>
+            </div>
+            <div class="action">
+                <span class="icon">🎖️</span>
+                <p>Ví điểm</p>
+                <p class="count">0</p>
+            </div>
+            <div class="action">
+                <span class="icon">📊</span>
+                <p>Doanh nghiệp</p>
+                <p class="count">0</p>
+            </div>
+            <div class="action">
+                <span class="icon">🛒</span>
+                <p>Sản phẩm</p>
+                <p class="count">0</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>  sau mỗi đổi thành className và sau mỗi class thêm _infor_nguoidung
